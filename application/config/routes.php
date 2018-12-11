@@ -52,3 +52,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $route['default_controller'] = 'index';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
+
+$route['tabla/(:num)'] = "tabla/index/$1";
+$route['goleadores/(:num)'] = "goleadores/index/$1";
+$route['figuras/(:num)'] = "figuras/index/$1";
+$route['jugador/(:num)'] = "jugador/index/$1";
+$route['goles/(:num)'] = "goles/index/$1";
+$route['descensos/(:num)'] = "descensos/index/$1";
