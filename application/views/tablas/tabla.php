@@ -19,7 +19,7 @@
             foreach($tabla as $t) { 
                 if($t['jugados'] > 0) {?>
             <tr>
-                <td><a href="/jugador/<?=$t['idJugadores']?>/"><?=$t['apodo']?></a></td>
+                <td><a href="/jugador/<?=$t['idjugadores']?>/"><?=$t['apodo']?></a></td>
                 <td><?=$t['puntos']?></td>
                 <td><?=$t['jugados']?></td>
                 <td><?=$t['ganados']?></td>
