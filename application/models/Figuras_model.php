@@ -8,7 +8,7 @@ class Figuras_model extends CI_Model {
     public function get_general() {
         $query = $this->db->query("SELECT sum(pj.mejor) as mejor, j.apodo, j.idJugadores 
                                     FROM 
-                                        partidos_Jugadores pj, jugadores j
+                                        partidos_jugadores pj, jugadores j
                                     WHERE 
                                         pj.idJugadores = j.idJugadores
                                     GROUP BY 
