@@ -18,7 +18,7 @@ class Tablas_model extends CI_Model {
                                     (select count(*) from partidos_jugadores WHERE idjugadores = j.idjugadores)) as promedio,
                                     (select sum(golesF) from partidos_jugadores WHERE idjugadores = j.idjugadores) as golesF,
                                     (select sum(golesC) from partidos_jugadores WHERE idjugadores = j.idjugadores) as golesC
-                                    from partidos_jugadores pj, Jugadores j WHERE pj.idjugadores = j.idjugadores group by j.apodo ORDER BY puntos DESC, promedio DESC, jugados DESC");
+                                    from partidos_jugadores pj, jugadores j WHERE pj.idjugadores = j.idjugadores group by j.apodo ORDER BY puntos DESC, promedio DESC, jugados DESC");
         return $query->result_array();
     }
     
@@ -35,7 +35,7 @@ class Tablas_model extends CI_Model {
                                     (select count(*) from partidos_jugadores pj2, partidos p2 WHERE p2.fecha BETWEEN '$anio-01-01' AND '$anio-12-31' AND p2.idpartidos = pj2.idpartidos AND idjugadores = j.idjugadores)) as promedio,
                                     (select sum(golesF) from partidos_jugadores pj2, partidos p2 WHERE p2.fecha BETWEEN '$anio-01-01' AND '$anio-12-31' AND p2.idpartidos = pj2.idpartidos AND idjugadores = j.idjugadores) as golesF,
                                     (select sum(golesC) from partidos_jugadores pj2, partidos p2 WHERE p2.fecha BETWEEN '$anio-01-01' AND '$anio-12-31' AND p2.idpartidos = pj2.idpartidos AND idjugadores = j.idjugadores) as golesC
-                                    from partidos_jugadores pj, Jugadores j, partidos p WHERE p.fecha BETWEEN '$anio-01-01' AND '$anio-12-31' AND pj.idjugadores = j.idjugadores GROUP BY j.apodo ORDER BY puntos DESC, promedio DESC, jugados DESC");
+                                    from partidos_jugadores pj, jugadores j, partidos p WHERE p.fecha BETWEEN '$anio-01-01' AND '$anio-12-31' AND pj.idjugadores = j.idjugadores GROUP BY j.apodo ORDER BY puntos DESC, promedio DESC, jugados DESC");
 
         return $query->result_array();
     }
@@ -53,7 +53,7 @@ class Tablas_model extends CI_Model {
                                     (select count(*) from partidos_jugadores WHERE idjugadores = j.idjugadores)) as promedio,
                                     (select sum(golesF) from partidos_jugadores WHERE idjugadores = j.idjugadores) as golesF,
                                     (select sum(golesC) from partidos_jugadores WHERE idjugadores = j.idjugadores) as golesC
-                                    from partidos_jugadores pj, Jugadores j WHERE pj.idjugadores = j.idjugadores GROUP BY j.apodo ORDER BY promedio DESC, puntos DESC, jugados DESC, golesF DESC");
+                                    from partidos_jugadores pj, jugadores j WHERE pj.idjugadores = j.idjugadores GROUP BY j.apodo ORDER BY promedio DESC, puntos DESC, jugados DESC, golesF DESC");
         return $query->result_array();
     }
     
@@ -70,7 +70,7 @@ class Tablas_model extends CI_Model {
                                     (select count(*) from partidos_jugadores pj2, partidos p2 WHERE p2.fecha BETWEEN '$anio-01-01' AND '$anio-12-31' AND p2.idpartidos = pj2.idpartidos AND idjugadores = j.idjugadores)) as promedio,
                                     (select sum(golesF) from partidos_jugadores pj2, partidos p2 WHERE p2.fecha BETWEEN '$anio-01-01' AND '$anio-12-31' AND p2.idpartidos = pj2.idpartidos AND idjugadores = j.idjugadores) as golesF,
                                     (select sum(golesC) from partidos_jugadores pj2, partidos p2 WHERE p2.fecha BETWEEN '$anio-01-01' AND '$anio-12-31' AND p2.idpartidos = pj2.idpartidos AND idjugadores = j.idjugadores) as golesC
-                                    from partidos_jugadores pj, Jugadores j, partidos p WHERE p.fecha BETWEEN '$anio-01-01' AND '$anio-12-31' AND pj.idjugadores = j.idjugadores GROUP BY j.apodo ORDER BY promedio DESC, puntos DESC, jugados DESC, golesF DESC");
+                                    from partidos_jugadores pj, jugadores j, partidos p WHERE p.fecha BETWEEN '$anio-01-01' AND '$anio-12-31' AND pj.idjugadores = j.idjugadores GROUP BY j.apodo ORDER BY promedio DESC, puntos DESC, jugados DESC, golesF DESC");
 
         return $query->result_array();
     }
