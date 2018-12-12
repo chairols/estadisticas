@@ -32,6 +32,7 @@
                         <li><a href="/tabla/2013/">Tabla 2013</a></li>
                         <li><a href="/tabla/2014/">Tabla 2014</a></li>
                         <li><a href="/tabla/2015/">Tabla 2015</a></li>
+                        <li><a href="/tabla/2018/">Tabla 2018</a></li>
                     </ul>
                 </li>
                 <li class="dropdown">
@@ -41,6 +42,7 @@
                         <li><a href="/descensos/2013/">Tabla 2013</a></li>
                         <li><a href="/descensos/2014/">Tabla 2014</a></li>
                         <li><a href="/descensos/2015/">Tabla 2015</a></li>
+                        <li><a href="/descensos/2018/">Tabla 2018</a></li>
                     </ul>
                 </li>
                 <li class="dropdown">
@@ -50,6 +52,7 @@
                         <li><a href="/goleadores/2013/">Tabla 2013</a></li>
                         <li><a href="/goleadores/2014/">Tabla 2014</a></li>
                         <li><a href="/goleadores/2015/">Tabla 2015</a></li>
+                        <li><a href="/goleadores/2018/">Tabla 2018</a></li>
                     </ul>
                 </li>
                 <li class="dropdown">
@@ -59,6 +62,7 @@
                         <li><a href="/figuras/2013/">Tabla 2013</a></li>
                         <li><a href="/figuras/2014/">Tabla 2014</a></li>
                         <li><a href="/figuras/2015/">Tabla 2015</a></li>
+                        <li><a href="/figuras/2018/">Tabla 2018</a></li>
                     </ul>
                 </li>
                 <li class="dropdown">
@@ -68,6 +72,7 @@
                         <li><a href="/goles/2013/">Tabla 2013</a></li>
                         <li><a href="/goles/2014/">Tabla 2014</a></li>
                         <li><a href="/goles/2015/">Tabla 2015</a></li>
+                        <li><a href="/goles/2018/">Tabla 2018</a></li>
                     </ul>
                 </li>
                 <?php if(isset($session['SID'])) { ?>
