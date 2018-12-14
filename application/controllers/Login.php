@@ -33,7 +33,7 @@ class Login extends CI_Controller {
                     'usuario' => $usuario['usuario']
                 );
                 $this->session->set_userdata($datos);      
-                redirect('/partidos/', 'refresh');
+                redirect('/partidos/agregar/', 'refresh');
             }
         }
         

@@ -84,7 +84,7 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="/partidos/">Agregar Partido</a>
+                    <a href="/partidos/agregar/">Agregar Partido</a>
                 </li>
                 <?php } ?>
             </ul>

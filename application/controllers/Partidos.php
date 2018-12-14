@@ -99,5 +99,25 @@ class Partidos extends CI_Controller {
         $this->load->view('partidos/resultado', $data);
         $this->load->view('layout/footer');
     }
+    
+    public function agregar() {
+        $session = $this->session->all_userdata();
+        if(!isset($session['SID'])) {
+            redirect('/login/', 'refresh');
+        }
+        
+        $header['title'] = "Cargar Partido";
+        $header['session'] = $session;
+        
+        $data['jugadores'] = $this->jugadores_model->get_jugadores();
+        
+        $this->load->view('layout/header', $header);
+        $this->load->view('partidos/agregar', $data);
+        $this->load->view('layout/footer');
+    }
+    
+    public function agregar_ajax() {
+        
+    }
 }
 ?>
